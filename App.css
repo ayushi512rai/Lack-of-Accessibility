@@ -1,0 +1,136 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+}
+
+.app-background {
+  background: repeating-linear-gradient(135deg, rgba(255,255,255,0.2) 0px, rgba(255,255,255,0.2) 2px, transparent 2px, transparent 20px),
+    linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  border-radius: 24px;
+  box-shadow: 0 4px 32px rgba(80,120,200,0.08);
+  padding: 2rem 1rem;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  width: 100%;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 2px 12px rgba(80,120,200,0.07);
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 0 0 24px 24px;
+  margin-bottom: 2rem;
+}
+
+.app-logo {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.app-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2a2a2a;
+  letter-spacing: 1px;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: rgba(255,255,255,0.92);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(80,120,200,0.08);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  text-decoration: none;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.feature-card:focus, .feature-card:hover {
+  box-shadow: 0 6px 24px rgba(80,120,200,0.18);
+  transform: translateY(-4px) scale(1.03);
+  border: 2px solid #a3bffa;
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-name {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.feature-desc {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
